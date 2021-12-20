@@ -1,0 +1,28 @@
+.wrapper-header {
+  padding: 7px 0;
+  background-color: $accentColor;
+}
+
+.header-body {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: auto;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: $mainTextColor;
+  border-radius: 3px;
+
+  cursor: pointer;
+  &__svg {
+    width: 13px;
+    height: 14px;
+
+    fill: $accentColor;
+  }
+}

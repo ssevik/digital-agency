@@ -1,0 +1,24 @@
+body {
+  color: $therdTextColor;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem; //18px  clamp(18px, 3vw, 30px)
+  line-height: 1.333;
+}
+
+.container {
+  min-width: 21.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  max-width: 91.875rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// font-family: 'Dosis', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;

@@ -2,5 +2,14 @@
 @import './utils/reset';
 @import './utils/variables';
 @import './utils/general';
+@import './utils/mixin';
 
 @import './layouts/header';
+@import './layouts/hero';
+@import './layouts/promo';
+@import './layouts/services';
+@import './layouts/projects';
+@import './layouts/video';
+@import './layouts/news';
+@import './layouts/testimonial';
+@import './layouts/footer';

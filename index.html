@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -36,42 +38,73 @@
 
     <main>
       <!-- hero start -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="wrapper hero-wrapper">
-          <div class="hero-slider">
-            <picture>
-              <source srcset="./images/gallery-img-1-mob-1x.jpg" media="(min-width:320px)" />
-              <img src="./images/gallery-img-1.jpg" alt="" />
-            </picture>
-          </div>
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="hero-content__title">МЫСЛИ ГЛОБАЛЬНО</h1>
+          <div class="hero-content">
+            <h1 class="hero-content__title">
+              МЫСЛИ<br />
+              ГЛОБАЛЬНО
+            </h1>
+
+            <p class="hero-content__text">
+              Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении
+            </p>
+
+            <div class="hero-content__inner">
+              <a class="hero-content__btn" href="">ПОДРОБНЕЕ</a>
             </div>
+            
           </div>
-        </div>
-      </section> -->
+
+          <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/hero-768.jpg" media="(min-width:768px)" />
+                  <source srcset="./images/hero-320.jpg" media="(min-width:320px)" />
+                  <img class="hero-slider__img" src="./images/hero-320.jpg" alt="космос" />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/hero-768.jpg" media="(min-width:768px)" />
+                  <source srcset="./images/hero-320.jpg" media="(min-width:320px)" />
+                  <img class="hero-slider__img" src="./images/hero-320.jpg" alt="космос" />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      </section>
       <!-- hero and -->
 
       <!-- promo start -->
-      <!-- <section class="promo">
+      <section class="promo">
         <div class="wrapper promo-wrapper">
-          <div class="container">
+          <div class="container promo-container">
             <div class="promo-content">
-              <h2 class="title promo-content__title">Вы полюбите нас с первой встречи!</h2>
+              <div class="promo-content__inner">
+                 <h2 class="promo-content__title">Вы полюбите нас с первой встречи!</h2>
               <p class="promo-content__text">
                 Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в
                 цифровой сфере.
               </p>
+              </div>
+             
+              
               <button class="promo-content__btn" type="button">ПЕРЕЗВОНИТЕ МНЕ</button>
+            
+              
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- promo and -->
 
       <!-- services start -->
-      <!-- <section class="services">
+    <section class="services"> 
         <div class="container">
           <div class="services-body">
             <div class="services-content">
@@ -87,257 +120,443 @@
 
             <ul class="services-list">
               <li class="services-item">
-                <img class="services-item__img" src="./images/service-1.png" alt="" width="" />
+               
+                <img class="services-item__img" src="./images/service-1.png" alt="СТРАТЕГИЯ" width="64" />
                 <h3 class="services-item__title">СТРАТЕГИЯ</h3>
-                <p class="services-item__text">
-                  Создадим уникальный и удобный дизайн..Создадим уникальный и удобный дизайн..
+          
+              
+                <div class="services-item__hover">
+                   <p class="services-item__text">
+                 Создадим уникальный и удобный дизайн..
                 </p>
                 <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+               
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-2.png" alt="АНАЛИЗ" width="64" />
                 <h3 class="services-item__title">АНАЛИЗ</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-3.png" alt="СОЦ СЕТИ" width="64" />
                 <h3 class="services-item__title">СОЦ СЕТИ</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-4.png" alt="РАЗВИТИЕ" width="64" />
                 <h3 class="services-item__title">РАЗВИТИЕ</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-5.png" alt="КОНТЕНТ" width="64" />
                 <h3 class="services-item__title">КОНТЕНТ</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-6.png" alt="ДИЗАЙН UX" width="64" />
                 <h3 class="services-item__title">ДИЗАЙН UX</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
                 <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-7.png" alt="ТАРГЕТИРОВАННАЯ РЕКЛАМА" width="64" />
                 <h3 class="services-item__title">ТАРГЕТИРОВАННАЯ РЕКЛАМА</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
 
               <li class="services-item">
-                <img class="services-item__img" src="" alt="" width="" />
+                <img class="services-item__img" src="./images/service-8.png" alt="ПРОДУКТ" width="64" />
                 <h3 class="services-item__title">ПРОДУКТ</h3>
-                <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
-                <a class="services-item__link" href="">ПОДРОБНЕЕ →ПОДРОБНЕЕ →</a>
+
+                <div class="services-item__hover">
+                  <p class="services-item__text">Создадим уникальный и удобный дизайн..</p>
+                  <a class="services-item__link" href="">ПОДРОБНЕЕ →</a>
+                </div>
+                
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- services and -->
 
       <!-- projects start -->
-      <!-- <section class="projects">
+      <section class="projects">
         <div class="wrapper projects-wrapper">
-          <div class="container">
+          <div class="container projects-container">
             <h2 class="projects-title title">Наши Проекты</h2>
 
             <ul class="projects-portfolio">
               <li class="portfolio__item">
-                <picture class="portfolio__img">
-                  <source srcset="" media="(min-width:320px)" />
-                  <img src="" alt="Lalique бутик" />
+              <a class="portfolio__link" href="">
+                <picture>
+                   <source srcset="./images/projects-tab-1.jpg" media="(min-width:768px)" />
+                  <source srcset="./images/projects-mob-1.jpg" media="(min-width:320px)" />
+                  <img class="portfolio__img" src="./images/projects-mob-1.jpg" alt="Lalique бутик" />
                 </picture>
+                <div class="portfolio__overlay">
+                    <svg class="portfolio__overlay--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                    <svg class="portfolio__overlay--svg">
+                      <use href="./images/sprite.svg#search"></use>
+                    </svg>
+                </div>
+              </a>
+              
+                
                 <p class="portfolio__text">Lalique бутик</p>
               </li>
 
               <li class="portfolio__item">
-                <picture class="portfolio__img">
-                  <source srcset="" media="(min-width:320px)" />
-                  <img src="" alt="Строительство домов" />
-                </picture>
+                 <a class="portfolio__link" href="">
+                    <picture class="portfolio__img">
+                      <source srcset="./images/projects-tab-2.jpg" media="(min-width:768px)" />
+                      <source srcset="./images/projects-mob-2.jpg" media="(min-width:320px)" />
+                      <img class="portfolio__img" src="./images/projects-mob-2.jpg" alt="Строительство домов" />
+                    </picture>
+                    <div class="portfolio__overlay">
+                        <svg class="portfolio__overlay--svg">
+                          <use href="./images/sprite.svg#info"></use>
+                        </svg>
+                        <svg class="portfolio__overlay--svg">
+                          <use href="./images/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                 </a>
+               
                 <p class="portfolio__text">Строительство домов</p>
               </li>
 
               <li class="portfolio__item">
-                <picture class="portfolio__img">
-                  <source srcset="" media="(min-width:320px)" />
-                  <img src="" alt="Кофейня" />
-                </picture>
+                 <a class="portfolio__link" href="">
+                    <picture class="portfolio__img">
+                      <source srcset="./images/projects-tab-3.jpg" media="(min-width:768px)" />
+                      <source srcset="./images/projects-mob-3.jpg" media="(min-width:320px)" />
+                      <img class="portfolio__img" src="./images/projects-mob-3.jpg" alt="Кофейня" />
+                    </picture>
+                    <div class="portfolio__overlay">
+                        <svg class="portfolio__overlay--svg">
+                          <use href="./images/sprite.svg#info"></use>
+                        </svg>
+                        <svg class="portfolio__overlay--svg">
+                          <use href="./images/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                 </a>
+               
                 <p class="portfolio__text">Кофейня</p>
               </li>
 
               <li class="portfolio__item">
-                <picture class="portfolio__img">
-                  <source srcset="" media="(min-width:320px)" />
-                  <img src="" alt="Уникальные туры" />
-                </picture>
+                 <a class="portfolio__link" href="">
+                    <picture class="portfolio__img">
+                      <source srcset="./images/projects-tab-4.jpg" media="(min-width:768px)" />
+                      <source srcset="./images/projects-mob-4.jpg" media="(min-width:320px)" />
+                      <img class="portfolio__img" src="./images/projects-mob-4.jpg" alt="Уникальные туры" />
+                    </picture>
+                  <div class="portfolio__overlay">
+                      <svg class="portfolio__overlay--svg">
+                        <use href="./images/sprite.svg#info"></use>
+                      </svg>
+                      <svg class="portfolio__overlay--svg">
+                        <use href="./images/sprite.svg#search"></use>
+                      </svg>
+                  </div>
+                 </a>
+                
                 <p class="portfolio__text">Уникальные туры</p>
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- projects and -->
 
       <!-- video start -->
-      <!-- <section class="video">
-        <div class="container">
-          <picture class="video__img">
-            <source srcset="" media="(min-width:320px)" />
-            <img src="" alt="Уникальные туры" />
-          </picture>
-          <h2 class="video__title title">Команда</h2>
-          <p class="video__text">
-            Наша команда - это наша самая большая ценность. Мы трудились, чтобы собрать группу
-            экспертов, чьи навыки дополняют друг друга. У членов нашей команды разные истории, но мы
-            разделяем общую страсть к идеалу. Мы верим, чтобы оставаться профессионалом, нужно
-            развиваться, поэтому мы постоянно ищем способы, как стать лучше в том, что мы делаем.
-          </p>
-          <button class="video__btn" type="button">СМОТРЕТЬ ВИДЕО</button>
+      <section class="video">
+        <div class="container video-container">
+
+          <div class="video-inner">
+
+          <div class="video__img">
+            <picture>
+              <source srcset="./images/video-img-desc.jpg" media="(min-width:1340px)" />
+              <source srcset="./images/video-img-tab.jpg" media="(min-width:768px)" />
+              <source srcset="./images/video-img-mob.jpg" media="(min-width:320px)" />
+              <img src="./images/video-img-mob.jpg" alt="Уникальные туры" />
+            </picture>
+          </div>
+          
+          <div class="video-content">
+            <h2 class="video__title title">Команда</h2>
+            <p class="video__text">
+              Наша команда - это наша самая большая ценность. Мы трудились, чтобы собрать группу
+              экспертов, чьи навыки дополняют друг друга. У членов нашей команды разные истории, но мы
+              разделяем общую страсть к идеалу. Мы верим, чтобы оставаться профессионалом, нужно
+              развиваться, поэтому мы постоянно ищем способы, как стать лучше в том, что мы делаем.
+            </p>
+            <button class="video__btn" type="button">СМОТРЕТЬ ВИДЕО</button>
+          </div>
+          
+
+          </div>
+      
         </div>
-      </section> -->
+      </section>
       <!-- video and -->
 
       <!-- news start -->
-      <!-- <section class="news">
+      <section class="news">
         <div class="wrapper news-wrapper">
-          <div class="container">
-            <h2 class="news__title title"></h2>
+          <div class="container news-container">
+            <h2 class="news__title title">Последние Новости</h2>
 
             <ul class="news-card">
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture">
+                    <source srcset="./images/news-mob-1.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-1.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>
                   <p class="card__item--text">3Д в брендинге</p>
-                </a>
+                
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-2.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-2.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>
                   <p class="card__item--text">Контекстная реклама</p>
-                </a>
+                
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-3.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-3.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>
                   <p class="card__item--text">Графика</p>
-                </a>
+              
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-4.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-4.jpg" alt="Уникальные туры" />
                   </picture>
-                  <p class="card__item--text">Корпоративная культура</p>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
                 </a>
+                  <p class="card__item--text">Корпоративная культура</p>     
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-5.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-5.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>  
                   <p class="card__item--text">Уникальный дизайн</p>
-                </a>
+                
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-6.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-6.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>  
                   <p class="card__item--text">Взгляд со стороны</p>
-                </a>
+                
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-7.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-7.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>  
                   <p class="card__item--text">Соц сети и их польза</p>
-                </a>
+                
               </li>
 
               <li class="card__item">
                 <a class="card__item--link" href="">
-                  <picture class="card__item--img">
-                    <source srcset="" media="(min-width:320px)" />
-                    <img src="" alt="Уникальные туры" />
+                  <picture>
+                    <source srcset="./images/news-mob-8.jpg" media="(min-width:320px)" />
+                    <img class="card__item--img" src="./images/news-mob-8.jpg" alt="Уникальные туры" />
                   </picture>
+                  <div class="card__item--ovirley">
+                    <svg class="card__item--svg">
+                      <use href="./images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </a>  
                   <p class="card__item--text">Эксклюзивность</p>
-                </a>
+                
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- news and -->
 
       <!-- testimonial start -->
-      <!-- <section class="testimonial">
-        <div class="container">
-          <div class="testimonial-slider">
-            <h2 class="testimonial-title title"></h2>
-            <p class="testimonial-text">
-              Если нужно создавать либо повышать имидж компании, то
-              <span class="testimonial-text__decor">диджитал-маркетинг </span>является наиболее
-              подходящим
-            </p>
-            <h3 class="testimonial-name">- Маргарита Акулич</h3>
+      <section class="testimonial">
+        <div class="container testimonial-container">
+          <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                 <h2 class="testimonial-title title">
+                  <svg class="testimonial-title--svg">
+                    <use href="./images/sprite.svg#testimonial"></use>
+                  </svg>
+                </h2>
+                <p class="testimonial-text">
+                  Если нужно создавать либо повышать имидж компании, то
+                  <span class="testimonial-text__decor">диджитал-маркетинг </span>является наиболее
+                  подходящим
+                </p>
+                <h3 class="testimonial-name">- Маргарита Акулич</h3>
+              </div>
+
+               <div class="swiper-slide">
+                 <h2 class="testimonial-title title">
+                  <svg class="testimonial-title--svg">
+                    <use href="./images/sprite.svg#testimonial"></use>
+                  </svg>
+                </h2>
+                <p class="testimonial-text">
+                  Если нужно создавать либо повышать имидж компании, то
+                  <span class="testimonial-text__decor">диджитал-маркетинг </span>является наиболее
+                  подходящим
+                </p>
+                <h3 class="testimonial-name">- Егор Акулич</h3>
+              </div>
+
+               <div class="swiper-slide">
+                 <h2 class="testimonial-title title">
+                  <svg class="testimonial-title--svg">
+                    <use href="./images/sprite.svg#testimonial"></use>
+                  </svg>
+                </h2>
+                <p class="testimonial-text">
+                  Если нужно создавать либо повышать имидж компании, то
+                  <span class="testimonial-text__decor">диджитал-маркетинг </span>является наиболее
+                  подходящим
+                </p>
+                <h3 class="testimonial-name">- Стас Акулич</h3>
+              </div>
+             
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- testimonial and -->
     </main>
 
     <!-- footer start -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="wrapper footer-wrapper">
-        <div class="container">
+        <div class="container footer-container">
           <a class="logo logo-footer" href="">
-            <img class="logo-footer__img" src="" alt="" width="" />
+            <img class="logo-footer__img" src="./images/logo-footer.png" alt="Di-Gi logo" width="83" />
           </a>
+
+          <p class="footer-text">
+          </p>
 
           <div class="footer-body">
             <div class="social">
-              <h2 class="social__title"></h2>
+              <h2 class="social__title">Мы хотели бы услышать все о вашем проекте.
+                Свяжись с нами</h2>
 
               <ul class="social-list">
                 <li class="social-item">
                   <a class="social-item__link" href="">
                     <svg class="social-item__svg">
-                      <use href="./images/sprite.svg#envelope"></use>
+                      <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -345,7 +564,7 @@
                 <li class="social-item">
                   <a class="social-item__link" href="">
                     <svg class="social-item__svg">
-                      <use href="./images/sprite.svg#envelope"></use>
+                      <use href="./images/sprite.svg#google"></use>
                     </svg>
                   </a>
                 </li>
@@ -353,7 +572,7 @@
                 <li class="social-item">
                   <a class="social-item__link" href="">
                     <svg class="social-item__svg">
-                      <use href="./images/sprite.svg#envelope"></use>
+                      <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -361,70 +580,77 @@
                 <li class="social-item">
                   <a class="social-item__link" href="">
                     <svg class="social-item__svg">
-                      <use href="./images/sprite.svg#envelope"></use>
+                      <use href="./images/sprite.svg#pri"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div class="contact">
-              <h3 class="contact-title">КОНТАКТЫ</h3>
-              <a class="contact-link" href="tel:805555566">+80 555 55 66</a>
-              <a class="contact-link" href="mailto:digi@gmail.com">digi@gmail.com</a>
+            <div class="footer-inner">
+              <div class="contact">
+                <h3 class="contact-title footer-title">КОНТАКТЫ</h3>
+                <a class="contact-link" href="tel:805555566">+80 555 55 66</a>
+                <a class="contact-link" href="mailto:digi@gmail.com">digi@gmail.com</a>
+              </div>
+
+              <address class="address">
+                <h2 class="address-title footer-title">АДРЕС</h2>
+                <p class="address-text">Пр. Науки 107 Kиев / Украина</p>
+              </address>
+
+              <div class="help">
+                <h3 class="help-title footer-title">ПОМОЩЬ</h3>
+                <ul class="help-list">
+                  <li class="help-item">
+                    <a class="help-item__link" href="">Как с нами связаться?</a>
+                  </li>
+
+                  <li class="help-item">
+                    <a class="help-item__link" href="">Что такое диджитал?</a>
+                  </li>
+
+                  <li class="help-item">
+                    <a class="help-item__link" href="">Стоимость услуг</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu">
+                <h3 class="menu-title footer-title">МЕНЮ</h3>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-item__link" href="">Наши проекты</a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-item__link" href="">Команда</a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a class="menu-item__link" href="">Блог</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <address class="address">
-              <h2 class="address-title">АДРЕС</h2>
-              <p class="address-text">Пр. Науки 107 Kиев / Украина</p>
-            </address>
-
-            <div class="help">
-              <h3 class="help-title">ПОМОЩЬ</h3>
-              <ul class="help-list">
-                <li class="help-item">
-                  <a class="help-item__link" href="">Как с нами связаться?</a>
-                </li>
-
-                <li class="help-item">
-                  <a class="help-item__link" href="">Что такое диджитал?</a>
-                </li>
-
-                <li class="help-item">
-                  <a class="help-item__link" href="">Стоимость услуг</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="menu">
-              <h3 class="menu-title"></h3>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a class="menu-item__link" href="">Наши проекты</a>
-                </li>
-
-                <li class="menu-item">
-                  <a class="menu-item__link" href="">Команда</a>
-                </li>
-
-                <li class="menu-item">
-                  <a class="menu-item__link" href="">Блог</a>
-                </li>
-              </ul>
-            </div>
+        
           </div>
         </div>
 
         <div class="back-top">
-          <p class="back-top__text"></p>
+          <p class="back-top__text">ВВЕРХ</p>
           <a class="back-top__link" href="">
             <svg class="back-top__svg">
-              <use href="./images/sprite.svg#instagram"></use>
+              <use href="./images/sprite.svg#back-top"></use>
             </svg>
           </a>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- footer and -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

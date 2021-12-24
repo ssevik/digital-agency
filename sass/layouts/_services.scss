@@ -1,0 +1,149 @@
+.services-body {
+  @include padding(1.562rem 0 8.5rem);
+
+  @media screen and (min-width: 48rem) {
+    @include padding(2.625rem 0 6.25rem);
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    display: flex;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.services-content {
+  margin-bottom: 2.5rem;
+
+  text-align: center;
+
+  @media screen and (min-width: 48rem) {
+    text-align: left;
+    margin-bottom: 1.687rem;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    margin-bottom: 0;
+    flex-basis: 61%;
+  }
+
+  &__title {
+    margin-bottom: 0.75rem;
+
+    @media screen and (min-width: 83.75rem) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 3.75rem;
+
+    color: $accentTextColor;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.2;
+
+    @media screen and (min-width: 83.75rem) {
+      margin-bottom: 4.687rem;
+    }
+
+    &::after {
+      @include decorLine(6.25rem, $accentColor);
+      top: 1.875rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media screen and (min-width: 48rem) {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.services-list {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+
+  @media screen and (min-width: 48rem) and(max-width: 83.687rem) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+  }
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+
+  border: 4px solid transparent;
+  cursor: pointer;
+  @include transition(border-color);
+
+  &:hover {
+    border-color: $accentColor;
+  }
+
+  &:hover .services-item__hover {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    max-width: 220px;
+  }
+}
+
+.services-item__img {
+  margin-bottom: 1.875rem;
+}
+
+.services-item__title {
+  margin-bottom: 1.375rem;
+  color: $accentTextColor;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.187rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 83.75rem) {
+    max-width: 12.187rem;
+  }
+}
+
+.services-item__hover {
+  opacity: 0;
+  @include transition(opacity);
+}
+
+.services-item__text {
+  margin-bottom: 1.125rem;
+
+  color: $therdTextColor;
+
+  font-family: 'Dosis', sans-serif;
+  font-size: 1rem;
+  line-height: 1.125;
+
+  @media screen and (min-width: 83.75rem) {
+    max-width: 12.187rem;
+  }
+}
+
+.services-item__link {
+  color: $accentColor;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.187;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}

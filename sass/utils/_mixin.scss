@@ -1,0 +1,46 @@
+@mixin transition($tipe) {
+  transition-property: $tipe;
+  transition-duration: 300ms;
+  transition-timing-function: $animationCubicBezier;
+}
+
+@mixin decorLine($wh, $bc) {
+  content: '';
+  position: relative;
+
+  display: block;
+  width: $wh;
+  height: 8px;
+  background-color: $bc;
+}
+
+@mixin padding($type) {
+  padding: $type;
+}
+
+@mixin btn($color, $bc) {
+  color: $color;
+  background-color: $bc;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  min-width: 12.5rem;
+  min-height: 3.75rem;
+
+  border-radius: 0.187rem;
+
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $therdTextColor;
+  }
+}

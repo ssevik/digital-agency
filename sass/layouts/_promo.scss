@@ -1,0 +1,56 @@
+.promo-wrapper {
+  @include padding(2.5rem 0);
+
+  color: $mainTextColor;
+  background-color: $accentColor;
+
+  @media screen and (max-width: 47.937rem) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    @include padding(3.562rem 0);
+  }
+}
+
+.promo-content {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 55px;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    justify-content: space-around;
+  }
+}
+
+.promo-content__inner {
+  @media screen and (min-width: 48rem) and (max-width: 83.687rem) {
+    flex: 1 1 40%;
+  }
+}
+
+.promo-content__title {
+  margin-bottom: 0.416em;
+
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.promo-content__text {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.125;
+
+  @media screen and (max-width: 47.937rem) {
+    margin-bottom: 2.5em;
+  }
+}
+
+.promo-content__btn {
+  @include btn($accentColor, $ovirlayColor);
+}

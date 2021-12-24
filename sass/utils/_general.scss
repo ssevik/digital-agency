@@ -5,18 +5,43 @@ body {
   line-height: 1.333;
 }
 
-.container {
-  min-width: 21.875rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .wrapper {
   max-width: 91.875rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container {
+  min-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 48rem) {
+    min-width: 48rem;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    width: 83.75rem; //1340
+  }
+}
+
+//max-width: 47.937rem  767px
+
+//max-width: 83.687rem  1339px
+
+.title {
+  color: $accentColor;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.166;
+  letter-spacing: 0.125rem;
+
+  @media screen and (min-width: 48rem) {
+    font-size: 3rem;
+  }
 }
 
 // font-family: 'Dosis', sans-serif;

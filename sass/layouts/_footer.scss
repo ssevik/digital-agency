@@ -1,0 +1,273 @@
+.footer-wrapper {
+  background-color: $accentColor;
+}
+
+.footer-container {
+  position: relative;
+  padding-top: 5.312rem;
+  padding-bottom: 3.937rem;
+
+  color: $mainTextColor;
+
+  @media screen and (max-width: 47.937rem) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 48rem) {
+    padding-top: 7.125rem;
+    padding-bottom: 3.5rem;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.logo-footer {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  top: -1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 14.375rem;
+  height: 3.375rem;
+  background-color: $accentColor;
+}
+
+.social {
+  margin-bottom: 2.5rem;
+
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 4.375em;
+  }
+}
+
+.social__title {
+  margin-bottom: 2.687rem;
+
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.125rem;
+
+  @media screen and (min-width: 48rem) {
+    font-size: 2.25rem;
+  }
+
+  @media screen and (min-width: 83.75rem) {
+    margin-bottom: 5rem;
+    max-width: 65.625rem;
+  }
+}
+
+.social-list {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.social-item {
+  @media screen and (max-width: 47.937rem) {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+
+    padding: 25px;
+    border-top: 1px solid #7ebf84;
+    border-bottom: 1px solid #7ebf84;
+
+    &:not(:last-child) {
+      border-right: 1px solid #7ebf84;
+    }
+  }
+}
+
+.social-item__svg {
+  width: 24px;
+  height: 24px;
+  fill: $mainTextColor;
+}
+
+.footer-title {
+  color: $ovirlayColor;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.166;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.footer-inner {
+  @media screen and (min-width: 48rem) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 48rem) and (max-width: 83.687rem) {
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+
+.contact {
+  @media screen and (max-width: 47.937rem) {
+    margin-bottom: 2.5rem;
+  }
+  @media screen and (min-width: 48rem) {
+    flex-basis: 50%;
+  }
+
+  &-title {
+    margin-bottom: 1.125rem;
+
+    @media screen and (min-width: 48rem) {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &-link {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.125;
+    &:not(:last-child) {
+      margin-bottom: 0.312rem;
+    }
+  }
+}
+
+.address {
+  @media screen and (max-width: 47.937rem) {
+    margin-bottom: 2.25rem;
+  }
+
+  @media screen and (min-width: 48rem) {
+    flex-basis: 50%;
+  }
+
+  font-style: normal;
+
+  &-title {
+    margin-bottom: 1.125rem;
+    @media screen and (min-width: 48rem) {
+      margin-bottom: 1.25rem;
+    }
+  }
+  &-text {
+    max-width: 125px;
+    font-size: 1rem;
+    line-height: 1.125;
+
+    @media screen and (max-width: 47.937rem) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.help {
+  @media screen and (max-width: 47.937rem) {
+    margin-bottom: 3.375rem;
+  }
+
+  @media screen and (min-width: 48rem) {
+    flex-basis: 50%;
+  }
+
+  &-title {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 48rem) {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.help-item {
+  &:not(:last-child) {
+    margin-bottom: 0.312rem;
+  }
+
+  &__link {
+    font-size: 1rem;
+    line-height: 1.125;
+  }
+}
+
+.menu {
+  @media screen and (min-width: 48rem) {
+    flex-basis: 50%;
+  }
+  &-title {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 48rem) {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.menu-item {
+  &:not(:last-child) {
+    margin-bottom: 0.312rem;
+  }
+
+  &__link {
+    font-size: 1rem;
+    line-height: 1.125;
+  }
+}
+
+.back-top {
+  @include padding(3.5rem 0 1.25rem);
+
+  display: flex;
+
+  align-items: center;
+
+  background-color: $ovirlayColor;
+
+  @media screen and (max-width: 47.937rem) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 48rem) {
+    @include padding(0.625rem 0);
+    justify-content: flex-end;
+  }
+
+  &__text {
+    color: $accentTextColor;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    line-height: 1.187rem;
+    letter-spacing: 0.125rem;
+
+    @media screen and (max-width: 47.937rem) {
+      margin-bottom: 1.25rem;
+    }
+
+    @media screen and (min-width: 48rem) {
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__svg {
+    width: 1.375rem;
+    height: 1.375rem;
+
+    fill: $accentColor;
+  }
+}
